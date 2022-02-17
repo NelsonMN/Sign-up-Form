@@ -12,6 +12,8 @@
     --img-width: 35vw;
     --main-top-padding: 15vh;
     --main-bottom-padding: 20vh;
+    --main-left-padding: 30px;
+    --main-right-padding: calc(100vh/6);
     --input-margin-top: 20px;
 }
 
@@ -36,4 +38,6 @@ label {
 .form-holder {
     padding-top: var(--main-top-padding);
     padding-bottom: var(--main-bottom-padding);
+    padding-left: var(--main-left-padding);
+    padding-right: var(--main-right-padding);
 }
