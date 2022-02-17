@@ -4,18 +4,36 @@
     padding: 0;
 }
 
+
+/*Don't forget to credit Annie Spratt*/
 :root {
-    --main-color: black;
+    --main-color: white;
     --img-height: 100vh;
-    --img-width: 40vw;;
+    --img-width: 35vw;
+    --main-top-padding: 15vh;
+    --main-bottom-padding: 20vh;
+    --input-margin-top: 20px;
 }
 
 body {
-    background-color: white;
+    background-color: var(--main-color);
     display: flex;
 }
 
 img {
     height: var(--img-height);
     width: var(--img-width);
+}
+
+input {
+    margin-top: var(--input-margin-top);
+}
+
+label {
+    position: absolute;
+}
+
+.form-holder {
+    padding-top: var(--main-top-padding);
+    padding-bottom: var(--main-bottom-padding);
 }
