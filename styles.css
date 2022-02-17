@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: black;
+    --img-height: 100vh;
+    --img-width: 40vw;;
+}
+
+body {
+    background-color: white;
+    display: flex;
+}
+
+img {
+    height: var(--img-height);
+    width: var(--img-width);
+}
