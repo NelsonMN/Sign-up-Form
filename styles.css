@@ -41,3 +41,8 @@ label {
     padding-left: var(--main-left-padding);
     padding-right: var(--main-right-padding);
 }
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
