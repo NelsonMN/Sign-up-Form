@@ -4,24 +4,23 @@
     padding: 0;
 }
 
-
-/*Don't forget to credit Annie Spratt*/
 :root {
-    --background-image: url(images/annie-spratt-vqdPQJgfMfc-unsplash.jpg);
+    --background-image: url(images/aurora-lights.jpeg);
     --img-height: 100vh;
-    --img-width: 35vw;
-    --bottom-margin-top: 30px;
+    --img-width: 37vw;
+    --bottom-margin-top: 35px;
     --main-color: white;
     --main-top-padding: 15vh;
-    --main-bottom-padding: 7vh;
+    --main-bottom-padding: 5.5vh;
     --main-left-padding: 50px;
     --main-right-padding: calc(100vh/6);
     --main-font-family: Arial, Helvetica, sans-serif;
-    --main-text-size: 24px;
+    --main-text-size: 22px;
     --input-margin-top: 20px;
     --input-height: 30px;
     --input-width: 15rem;
     --input-border-col: #E5E7EB;
+    --aurora-text: 'Marck Script', cursive;
 }
 
 body {
@@ -29,9 +28,13 @@ body {
     display: flex;
 }
 
-img {
-    height: var(--img-height);
-    width: var(--img-width);
+button {
+    padding: 10px 40px;
+    font: bold;
+    font-size: 18px;
+    background-color: rgb(22, 122, 131);
+    color: var(--main-color);
+    border-radius: 5px;
 }
 
 input {
@@ -44,10 +47,32 @@ input {
     border-radius: 5px;
 }
 
+input:invalid {
+    border-color: red
+}
+
 label {
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(22, 122, 131)
+}
+
+.aurora {
+    display: flex;
+    height: 125px;
+    width: 37vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: var(--main-color);
+    font-family: var(--aurora-text);
+    margin-top: 200px;
+    background-color: rgb(0,0,0,.2);
 }
 
 .form {
@@ -61,14 +86,12 @@ label {
     padding-top: var(--main-top-padding);
     padding-bottom: var(--main-bottom-padding);
     font-family: var(--main-font-family);
-    
+    width: 63vw;
 }
 
 .form-modal {
     position: relative;
-    padding: 20px 0;
-    padding-left: var(--main-left-padding); 
-    padding-right: var(--main-right-padding);
+    padding: 20px var(--main-right-padding) 30px var(--main-left-padding);
     background-color: white;
     box-shadow: 5px 5px 5px rgb(200, 198, 198);
 }
@@ -86,10 +109,22 @@ label {
 }
 
 .image-holder {
+    height: var(--img-height);
+    width: var(--img-width);
     background-image: var(--background-image);
+    background-repeat: repeat-x;
 }
+
+.image-holder img {
+    height: 95px;
+    padding-left: 40px
+} 
 
 .emphasized {
     font-weight: 500;
     font-size: var(--main-text-size)
+}
+
+.login {
+    margin: 20px 0;
 }
