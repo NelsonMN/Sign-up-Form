@@ -7,22 +7,26 @@
 
 /*Don't forget to credit Annie Spratt*/
 :root {
-    --main-color: lightgrey;
+    --background-image: url(images/annie-spratt-vqdPQJgfMfc-unsplash.jpg);
     --img-height: 100vh;
     --img-width: 35vw;
+    --bottom-margin-top: 30px;
+    --main-color: white;
     --main-top-padding: 15vh;
-    --main-bottom-padding: 20vh;
+    --main-bottom-padding: 7vh;
     --main-left-padding: 50px;
     --main-right-padding: calc(100vh/6);
+    --main-font-family: Arial, Helvetica, sans-serif;
+    --main-text-size: 24px;
     --input-margin-top: 20px;
     --input-height: 30px;
     --input-width: 15rem;
+    --input-border-col: #E5E7EB;
 }
 
 body {
     background-color: var(--main-color);
     display: flex;
-    
 }
 
 img {
@@ -34,37 +38,58 @@ input {
     margin-top: var(--input-margin-top);
     height: var(--input-height);
     width: var(--input-width);
+    padding-left: 5px;
+    border-color: var(--input-border-col);
+    border-style: solid;
+    border-radius: 5px;
 }
 
 label {
     position: absolute;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .form {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 80px;
-    height: 25vh;
+    gap: 10px 80px;
+    height: min(25vh, 100%);
 }
 
 .form-holder {
     padding-top: var(--main-top-padding);
     padding-bottom: var(--main-bottom-padding);
-    /* padding-left: var(--main-left-padding); */
-    /* padding-right: var(--main-right-padding); */
+    font-family: var(--main-font-family);
+    
 }
 
 .form-modal {
-    padding: 15px;
+    position: relative;
+    padding: 20px 0;
     padding-left: var(--main-left-padding); 
     padding-right: var(--main-right-padding);
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(200, 198, 198);
 }
 
 .bottom-activities {
-    padding-top: 30px;
+    padding-top: var(--bottom-margin-top);
+    padding-left: var(--main-left-padding); 
+    padding-right: var(--main-right-padding);
 }
 
 .top-text {
-    padding-bottom: var(--main-top-padding)
+    padding-bottom: var( --main-bottom-padding);
+    padding-left: var(--main-left-padding); 
+    padding-right: var(--main-right-padding);
+}
+
+.image-holder {
+    background-image: var(--background-image);
+}
+
+.emphasized {
+    font-weight: 500;
+    font-size: var(--main-text-size)
 }
